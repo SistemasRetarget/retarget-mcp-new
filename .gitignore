@@ -1,0 +1,37 @@
+# Ruby
+*.gem
+*.rbc
+.bundle
+.byebug_history
+.cache
+.irb_history
+.rspec
+/coverage/
+/db/*.sqlite3
+/db/*.sqlite3-wal
+/db/migrate/
+/log/
+/pkg/
+/public/system
+/tmp/
+/vendor/
+*.swp
+*.swo
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cloud
+.gcloudignore
