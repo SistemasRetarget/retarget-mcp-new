@@ -70,7 +70,7 @@ gcloud run deploy $SERVICE_NAME \
   --memory=2Gi \
   --cpu=2 \
   --timeout=3600 \
-  --max-instances=100 \
+  --max-instances=28 \
   --set-env-vars="RAILS_ENV=production" \
   --quiet
 
