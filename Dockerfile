@@ -12,16 +12,13 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 # Copiar Gemfile
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile* ./
 
 # Instalar gemas (sin dev/test)
-RUN bundle install --deployment --without development test
+RUN bundle install --deployment --without development test 2>/dev/null || bundle install
 
 # Copiar código
 COPY . .
-
-# Precompilar assets
-RUN bundle exec rake assets:precompile 2>/dev/null || true
 
 # Crear directorio para logs
 RUN mkdir -p log
