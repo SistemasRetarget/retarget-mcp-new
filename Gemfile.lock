@@ -1,0 +1,33 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rails (7.0.8.5)
+      actioncable (= 7.0.8.5)
+      actionmailbox (= 7.0.8.5)
+      actionmailer (= 7.0.8.5)
+      actionpack (= 7.0.8.5)
+      actiontext (= 7.0.8.5)
+      actionview (= 7.0.8.5)
+      activejob (= 7.0.8.5)
+      activemodel (= 7.0.8.5)
+      activerecord (= 7.0.8.5)
+      activestorage (= 7.0.8.5)
+      activesupport (= 7.0.8.5)
+    pg (~> 1.1)
+    puma (~> 5.0)
+    rack-cors
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rails (~> 7.0.0)
+  pg (~> 1.1)
+  puma (~> 5.0)
+  rack-cors
+
+RUBY VERSION
+  ruby 3.2.0p0
+
+BUNDLED WITH
+  2.4.1
